@@ -1,0 +1,311 @@
+/*
+Navigation bar stylesheet
+*/
+
+.clearfix{
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+body{
+    background: rgba(211, 211, 211,1);
+    font-family: 'Rosario';
+    font-size: medium;
+    font-weight: 200;
+    font-variant: small-caps;
+}
+
+header 
+{
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    height: 200px;
+    background: linear-gradient(90deg, rgb(92, 122, 122) 0%, rgba(4, 68, 68, 1) 100%);
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li{
+    float: left;
+}
+
+li .dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+li a, .dropbtn{
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdown-content{
+    display: none;
+    min-width: inherit;
+    box-shadow: 2px 3px 5px black;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+    background-color: rgb(190, 0, 10);
+    color: white;
+}
+
+.dropdown-content a{
+    text-decoration: none;
+    color: gray;
+    background: white;
+    display: block;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.dropdown-content a:hover{
+    color: rgb(201, 0, 94);
+    background: rgb(199, 192, 192);
+}
+
+.dropdown-content a:last-child{
+    border: none;
+}
+
+.dropdown-content a:first-child{
+    border-top: 3px solid rgb(190, 0, 10);
+}
+
+.floated{
+    float: right;
+}
+
+ul li:first-child{
+    padding-left: 30px;
+}
+
+ul li:last-child{
+    padding-right: 30px;
+}
+
+table, th, td{
+    margin: 10px auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr{background-color: white;}
+
+tbody tr:nth-child(odd){
+    background-color: #d3d3d3;
+}
+
+th, td{
+    min-width: 50px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+th:hover, td:hover{
+    color: rgb(201, 0, 94);
+}
+
+td[rowspan = "7"]{
+    line-height: 50px;
+    background-color: white;
+}
+
+table caption{
+    float: left;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    font-family: Garamond;
+    color:rgb(190, 0, 10);
+    text-decoration: underline dotted black;
+    cursor: pointer;
+}
+
+.container-left{
+    margin: 50px 50px;
+    padding: 10px;
+    width: 25%;
+    height: 600px;
+    box-shadow: 5px 5px 10px dimgray;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    float: left;
+    color: rgb(40, 41, 41);
+    font-family: Garamond;
+    font-weight: 200;
+    font-size: medium;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+    font-variant: normal;
+    background-color: white;
+}
+
+.container-middle{
+    margin: 50px auto;
+    padding: 10px;
+    width: 33%;
+    height: 600px;
+    box-shadow: 5px 5px 10px dimgray;
+    border: none;
+    border-radius: 20px;
+    color: rgb(40, 41, 41);
+    font-family: Garamond;
+    font-weight: 200;
+    font-size: medium;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+    font-variant: normal;
+    background-color: white;
+}
+
+.container-right{
+    margin: 50px 50px;
+    padding: 10px;
+    width: 25%;
+    height: 600px;
+    box-shadow: 5px 5px 10px dimgray;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    float: right;
+    color: rgb(40, 41, 41);
+    font-family: Garamond;
+    font-weight: 200;
+    font-size: medium;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+    font-variant: normal;
+    background-color: white;
+}
+
+.container-right::-webkit-scrollbar{
+    display: none;
+}
+
+.container-middle::-webkit-scrollbar{
+    display: none;
+}
+
+.container-left::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h2.drop{
+    display: block;
+    position: relative;
+}
+
+h2.drop:hover + .drop-table, .drop-table:hover{
+    display: block;
+    cursor: pointer;
+}
+
+.drop-table{
+    display: none;
+    position: relative;
+    margin: 10px auto;
+}
+
+.myself {
+    width: auto;
+    height: 180px;
+    border-radius: 100px;
+    margin: 10px 50px;
+    z-index: 1;
+    float: left;
+}
+
+.name{
+    font-style: normal;
+    font-size: 70px;
+    font-family: Garamond;
+    font-weight: 100;
+    font-variant: normal;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 6px rgb(7, 5, 0), -4px -4px 6px rgb(54, 53, 52), 4px -4px 5px rgb(245, 245, 244);
+    z-index: 1;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.intro{
+    color: rgb(250, 238, 238);
+    font-style: italic;
+    font-size: 30px;
+    font-family: monospace;
+    font-variant: normal;
+    padding: 20px;
+    margin: 5px;
+}
+
+.desc{
+    color: rgb(250, 238, 238);
+    font-style: italic;
+    font-size: 20px;
+    font-family: monospace;
+    font-variant: normal;
+    padding: 20px;
+    margin: 5px;
+}
+
+.bg{
+    width: 100%;
+    height: auto;
+    border-radius:inherit;
+    clear: both;
+}
+
+p.title{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: black;
+    padding: 10px;
+    text-decoration: underline overline 1px solid rgb(216, 207, 207);
+}
+
+p.descp, ol{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: black;
+    padding: 10px;
+}
+
+footer{
+    position: relative;
+    width: inherit;
+    height: 100px;
+    background: rgba(0,0,0,0.7);
+    margin-bottom: 0;
+    padding: 10px;
+}
